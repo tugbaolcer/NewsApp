@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -28,11 +29,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_18
-        targetCompatibility JavaVersion.VERSION_18
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = '18'
+        jvmTarget = '17'
     }
     buildFeatures {
         compose true
