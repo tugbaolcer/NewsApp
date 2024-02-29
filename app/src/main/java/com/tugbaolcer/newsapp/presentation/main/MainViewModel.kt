@@ -4,7 +4,7 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.tugbaolcer.newsapp.domain.usercases.AppEntryUseCases
+import com.tugbaolcer.newsapp.domain.usercases.appentry.AppEntryUseCases
 import com.tugbaolcer.newsapp.presentation.onboarding.navgraph.Route
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
