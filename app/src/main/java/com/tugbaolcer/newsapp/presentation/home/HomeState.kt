@@ -1,4 +1,6 @@
 package com.tugbaolcer.newsapp.presentation.home
 
-class HomeState {
-}
+data class HomeState(
+    val newsTicker: String = "",
+    val isLoading: Boolean = false,
+)

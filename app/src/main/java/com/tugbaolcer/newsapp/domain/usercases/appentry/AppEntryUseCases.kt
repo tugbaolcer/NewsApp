@@ -1,4 +1,4 @@
-package com.tugbaolcer.newsapp.domain.usercases
+package com.tugbaolcer.newsapp.domain.usercases.appentry
 
 data class AppEntryUseCases(
     val readAppEntry: ReadAppEntry,

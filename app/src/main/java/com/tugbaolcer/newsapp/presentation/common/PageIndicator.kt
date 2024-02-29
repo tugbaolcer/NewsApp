@@ -1,4 +1,4 @@
-package com.tugbaolcer.newsapp.presentation.onboarding.common
+package com.tugbaolcer.newsapp.presentation.common
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement

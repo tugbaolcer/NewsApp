@@ -1,4 +1,4 @@
-package com.tugbaolcer.newsapp.domain.usercases
+package com.tugbaolcer.newsapp.domain.usercases.appentry
 
 import com.tugbaolcer.newsapp.domain.manager.LocalUserManager
 import kotlinx.coroutines.flow.Flow

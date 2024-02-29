@@ -1,4 +1,6 @@
 package com.tugbaolcer.newsapp.domain.model
 
-class Source {
-}
+data class Source(
+    val id: String,
+    val name: String
+)

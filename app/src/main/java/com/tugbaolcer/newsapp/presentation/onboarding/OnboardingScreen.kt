@@ -19,9 +19,9 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.tugbaolcer.newsapp.presentation.onboarding.common.NewsButton
-import com.tugbaolcer.newsapp.presentation.onboarding.common.NewsTextButton
-import com.tugbaolcer.newsapp.presentation.onboarding.common.PagerIndicator
+import com.tugbaolcer.newsapp.presentation.common.NewsButton
+import com.tugbaolcer.newsapp.presentation.common.NewsTextButton
+import com.tugbaolcer.newsapp.presentation.common.PagerIndicator
 import com.tugbaolcer.newsapp.presentation.onboarding.components.Dimens.MediumPadding2
 import com.tugbaolcer.newsapp.presentation.onboarding.components.OnBoardingPage
 import kotlinx.coroutines.launch

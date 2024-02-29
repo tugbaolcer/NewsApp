@@ -1,4 +1,4 @@
-package com.tugbaolcer.newsapp.presentation.onboarding.main
+package com.tugbaolcer.newsapp.presentation.main
 
 import android.os.Bundle
 import android.util.Log
@@ -17,7 +17,7 @@ import androidx.core.view.WindowCompat
 import androidx.lifecycle.lifecycleScope
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import com.tugbaolcer.newsapp.domain.usercases.appentry.AppEntryUseCases
-import com.tugbaolcer.newsapp.presentation.onboarding.navgraph.NavGraph
+import com.tugbaolcer.newsapp.presentation.navgraph.NavGraph
 import com.tugbaolcer.newsapp.ui.theme.NewsAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch

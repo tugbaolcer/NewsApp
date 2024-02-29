@@ -1,4 +1,4 @@
-package com.tugbaolcer.newsapp.presentation.onboarding.navgraph
+package com.tugbaolcer.newsapp.presentation.navgraph
 
 import androidx.navigation.NamedNavArgument
 
@@ -19,4 +19,6 @@ sealed class Route(
     object AppStartNavigation : Route(route = "appStartNavigation")
 
     object NewsNavigation : Route(route = "newsNavigation")
+
+    object NewsNavigatorScreen : Route(route = "newsNavigator")
 }
