@@ -25,6 +25,8 @@ import com.tugbaolcer.newsapp.presentation.home.HomeViewModel
 import com.tugbaolcer.newsapp.presentation.navgraph.Route
 import com.tugbaolcer.newsapp.presentation.newsnavigator.components.BottomNavigationItem
 import com.tugbaolcer.newsapp.presentation.newsnavigator.components.NewsBottomNavigation
+import com.tugbaolcer.newsapp.presentation.search.SearchScreen
+import com.tugbaolcer.newsapp.presentation.search.SearchViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -87,6 +89,13 @@ fun NewsNavigator() {
                 HomeScreen(
                     articles = articles,
                     navigate = { navigateToTab(navController = navController, route = it) })
+            }
+
+            composable(route = Route.SearchScreen.route) {
+                val viewModel: SearchViewModel = hiltViewModel()
+                val state = viewModel.state.value
+                OnBackClickStateSaver(navController = navController)
+                SearchScreen(state = state, event = viewModel::onEvent)
             }
             composable(route = Route.DetailsScreen.route) {
 

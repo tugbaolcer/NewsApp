@@ -5,6 +5,11 @@ import androidx.paging.PagingState
 import com.tugbaolcer.newsapp.data.remote.dto.AppApi
 import com.tugbaolcer.newsapp.domain.model.Article
 
+
+/**
+ * PagingSource: verileri sayfalama yoluyla yuklemeye icin kullanilir.
+ *
+ */
 class SearchNewsPagingSource(
     private val api: AppApi,
     private val searchQuery: String,
