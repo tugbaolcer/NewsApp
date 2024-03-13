@@ -8,6 +8,7 @@ import androidx.activity.viewModels
 import androidx.compose.foundation.background
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Modifier
@@ -25,8 +26,6 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
-    @Inject
-    lateinit var appEntryUseCases: AppEntryUseCases
 
     private val viewModel by viewModels<MainViewModel>()
 
@@ -36,16 +35,8 @@ class MainActivity : ComponentActivity() {
         installSplashScreen().apply {
             setKeepOnScreenCondition(condition = { viewModel.splashCondition.value })
         }
-
-        lifecycleScope.launch {
-            appEntryUseCases.readAppEntry().collect {
-                Log.d("LOG_READ_ENTRY", "$it")
-            }
-        }
-
         setContent {
             NewsAppTheme(dynamicColor = false) {
-
                 val isSystemInDarkMode = isSystemInDarkTheme()
                 val systemUiColor = rememberSystemUiController()
                 SideEffect {
@@ -54,11 +45,9 @@ class MainActivity : ComponentActivity() {
                         darkIcons = !isSystemInDarkMode
                     )
                 }
-                Box(modifier = Modifier.background(MaterialTheme.colorScheme.background)) {
-//                    val viewModel: OnBoardingViewModel = hiltViewModel()
-//                    OnBoardingScreen(event = viewModel::onEvent)
+                //Add fillMaxSize()
+                Box(modifier = Modifier.background(MaterialTheme.colorScheme.background).fillMaxSize()) {
                     NavGraph(startDestination = viewModel.startDestination.value)
-
                 }
             }
         }
