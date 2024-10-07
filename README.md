@@ -20,7 +20,6 @@
 - **Coroutines**: For managing background tasks.
 - **ViewModel**: To handle UI-related data in a lifecycle-conscious way.
 - **Hilt**: Dependency injection framework for managing dependencies.
-- **Unit Testing**: Written with JUnit and Mockito for testing business logic.
 
 ## Installation
 
