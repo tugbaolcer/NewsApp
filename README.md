@@ -2,6 +2,15 @@
 
 **NewsApp** is an Android application that provides users with the latest news from various categories. This app is built using modern Android development technologies, including Jetpack components and Clean Architecture.
 
+## Preview
+
+![news_onboarding](https://github.com/user-attachments/assets/dc84e85f-16be-47e0-a755-6357d4c5d6f0)
+
+![news1](https://github.com/user-attachments/assets/ee455344-eaf8-41ce-9462-28b0a4000042)
+
+![news2](https://github.com/user-attachments/assets/6fd778a2-ce3c-4149-a982-807c83509b6a)
+
+
 ## Features
 
 - Browse the latest news articles.
